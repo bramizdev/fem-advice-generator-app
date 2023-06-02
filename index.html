@@ -34,23 +34,29 @@
   <body>
     <main>
       <h1 class="visually-hidden">Advice generator</h1>
-      <h2 class="heading">Advice # <span class="heading__advice">117</span></h2>
-      <p class="advice">
-        "It is easy to sit up and take notice, what's difficult is getting up
-        and taking action."
-      </p>
-      <picture>
-        <source
-          media="(min-width:768px)"
-          srcset="./images/pattern-divider-desktop.svg"
-        />
-        <img
-          class="divider"
-          src="./images/pattern-divider-mobile.svg"
-          alt=""
-          aria-hidden="true"
-        />
-      </picture>
+      <div class="spinner hidden"></div>
+      <div class="main__container hidden">
+        <h2 class="heading">
+          Advice # <span class="heading__advice">117</span>
+        </h2>
+        <p class="advice"></p>
+        <picture>
+          <source
+            media="(min-width:768px)"
+            srcset="./images/pattern-divider-desktop.svg"
+          />
+          <img
+            class="divider"
+            src="./images/pattern-divider-mobile.svg"
+            alt=""
+            aria-hidden="true"
+          />
+        </picture>
+      </div>
+      <div class="error hidden">
+        <h2 class="heading">Error!</h2>
+        <p class="advice">Something went wrong, please try again.</p>
+      </div>
       <button class="btn" aria-label="Generate advice.">
         <img src="./images/icon-dice.svg" alt="" aria-hidden="true" />
       </button>
